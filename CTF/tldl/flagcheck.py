@@ -1,0 +1,25 @@
+#### Ошибочный путь решения задачи flagcheck
+
+ppp = "\x33\x84\x3d\x3f\x2a\x93\x7b\x82\1a\xac\x8e"
+#ppp = "\xF4, \x0B1, \x0CB, \x8D, \x21, \x0E, \x0B7, \x67, \x96, \x2C"
+#ppp = "\x81, \x0D3, \x0BC, \x29, \x6C, \x4B, \x0D, 0, \x0ED, \x0FD"
+#ppp = "\x0EE, \x56, \x40, \x52, \x0D5, 5, \x6D, \x90, \x3E, \x7A, \x1B"
+# ppp = "\x69, \x23, \x1F, \x0B6, \x1D, \x0BC, \x98, \x0D1, \x0A6, \x83"
+ppp = "\x0E9, \x0EB, \x13, \x21, \x3D, \x0F8, \x2B, \x79, \x53, \x4F, \x0A1"
+
+mi = []
+ma = []
+print(len("\x33\x84\x3d\x3f\x2a\x93\x7b\x82\x1a\x0ac\x8e\xF4\x0B1\x0CB\x8D\x21\x0E\x0B7\x67\x96\x2C\x81\x0D3\x0BC\x29\x6C\x4B\x0D\x00\x0ED\x0FD\x0EE\x56\x40\x52\x0D5\x05\x6D\x90\x3E\x7A\x1B"))
+
+exit(1)
+for i in range(len(ppp)):
+    t = "" ; mino = 255; maxo = 0
+    for q in range(0x20, 0x7f):
+        if ord(ppp[i]) ^ q < mino: mino = ord(ppp[i])^q
+        if ord(ppp[i]) ^ q > maxo: maxo = ord(ppp[i])^q
+    # print(mino, maxo)
+    mi.append(mino)
+    ma.append(maxo)
+print(mi)
+print(ma)
+    #print(len(t), t)
