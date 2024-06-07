@@ -2,7 +2,7 @@
 *.html
 *.svg
 *.otf
-Examples/
+*Examples/
 bot_discord/
 bot_python/
 
