@@ -2,7 +2,10 @@
 *.html
 *.svg
 *.otf
-*Examples/
+Examples/
+Defcon/Examples/
+GOCTF/Examples/
+CTFLearn/Examples/
 bot_discord/
 bot_python/
 
